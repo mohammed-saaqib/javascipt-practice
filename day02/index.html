@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>on of blub</title>
+    
+  </head>
+  <body>
+    <h2>what can javascript do?</h2>
+
+    <p>javasceipt can change html attribute value</p>
+
+    <p>
+      in this case javasceipt chenge the value of the src (source) attribute of
+      an image.
+    </p>
+
+    <button onclick="handleonbuttonclick()">on</button>
+    <p id="paraid"></p>
+    <img id="imgid" src="./images/off.webp" height="200" width="200" />
+
+    <button onclick="document.getElementById('imgid').src='./images/off.webp'">
+      off
+    </button>
+    <script>
+
+        function handleonbuttonclick() {
+            //block of code
+            document.getElementById('imgid').src="./images/on.webp";
+            document.getElementById('paraid').innerHTML='the blue is on now';
+        }
+
+        function handleonbuttonclick() {
+            document.getElementById('imgid').src = "./images/off.webp";
+            document.getElementById('paraid').innerHTML='the blue is off now';
+        }
+
+    </script>
+  </body>
+</html>
